@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PG SLOT - EA168</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+    body {
+      font-family: 'Orbitron', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      background: radial-gradient(circle at center, #0f2027, #203a43, #2c5364);
+      color: #00e5ff;
+      text-shadow: 0 0 10px rgba(0, 229, 255, 0.8);
+      overflow: hidden;
+      position: relative;
+      padding-top: 100px; /* เว้นพื้นที่ด้านบนสำหรับโลโก้ */
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 30px;
+      letter-spacing: 2px;
+    }
+
+    .logo {
+      position: fixed;
+      top: 10px;
+      left: 10px;
+      width: 120px;
+      height: auto;
+      filter: drop-shadow(0 0 10px rgba(0, 229, 255, 0.8));
+      z-index: 1000;
+      -webkit-user-select: none; /* Safari */
+      user-select: none; /* Standard */
+    }
+
+    .button-container {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 20px;
+      width: 100%;
+      max-width: 800px;
+      padding: 20px;
+      -webkit-backdrop-filter: blur(10px); /* Safari Support */
+      backdrop-filter: blur(10px); /* Standard */
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(0, 229, 255, 0.3);
+      background: rgba(255, 255, 255, 0.05);
+      
+    }
+
+    .redirect-button {
+      width: 100px;
+      height: 100px;
+      border: none;
+      border-radius: 15px;
+      cursor: pointer;
+      position: relative;
+      background-size: cover;
+      background-position: center;
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 0 15px rgba(0, 229, 255, 0.5);
+    }
+
+    .redirect-button::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 229, 255, 0.2);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      border-radius: 15px;
+    }
+
+    .redirect-button:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 25px rgba(0, 229, 255, 0.9), 0 0 50px rgba(0, 229, 255, 0.5);
+    }
+
+    .redirect-button:hover::before {
+      opacity: 1;
+    }
+
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+
+    /* ลายน้ำ */
+    .watermark {
+      position: fixed;
+      bottom: 10px;
+      right: 10px;
+      font-size: 0.9rem;
+      color: rgba(0, 229, 255, 0.6);
+      text-shadow: 0 0 8px rgba(0, 229, 255, 0.9);
+      letter-spacing: 1px;
+      pointer-events: none;
+      -webkit-user-select: none; /* Safari */
+      user-select: none; /* Standard */
+    }
+
+    /* ใส่ภาพพื้นหลังของแต่ละปุ่ม */
+    #btn1 { background-image: url('images/button1.jpg'); }
+    #btn2 { background-image: url('images/2.png'); }
+    #btn3 { background-image: url('images/3.png'); }
+    #btn4 { background-image: url('images/4.png'); }
+    #btn5 { background-image: url('images/5.png'); }
+    #btn6 { background-image: url('images/6.png'); }
+    #btn7 { background-image: url('images/7.png'); }
+    #btn8 { background-image: url('images/8.png'); }
+    #btn9 { background-image: url('images/9.png'); }
+    #btn10 { background-image: url('images/10.png'); }
+    #btn11 { background-image: url('images/11.png'); }
+    #btn12 { background-image: url('images/12.png'); }
+    #btn13 { background-image: url('images/13.png'); }
+    #btn14 { background-image: url('images/14.png'); }
+    #btn15 { background-image: url('images/15.png'); }
+    #btn16 { background-image: url('images/16.png'); }
+    #btn17 { background-image: url('images/17.png'); }
+    #btn18 { background-image: url('images/18.png'); }
+    #btn19 { background-image: url('images/19.png'); }
+    #btn20 { background-image: url('images/20.png'); }
+  </style>
+</head>
+<body>
+  <!-- โลโก้ -->
+  <img src="images/logo.png" alt="โลโก้ SAK28" class="logo">
+
+  <h1>EA168</h1>
+  <div class="button-container">
+    <button class="redirect-button" id="btn1" type="button" onclick="redirectToLink(1)"><span class="sr-only">ไปยังลิงก์ 1</span></button>
+    <button class="redirect-button" id="btn2" type="button" onclick="redirectToLink(2)"><span class="sr-only">ไปยังลิงก์ 2</span></button>
+    <button class="redirect-button" id="btn3" type="button" onclick="redirectToLink(3)"><span class="sr-only">ไปยังลิงก์ 3</span></button>
+    <button class="redirect-button" id="btn4" type="button" onclick="redirectToLink(4)"><span class="sr-only">ไปยังลิงก์ 4</span></button>
+    <button class="redirect-button" id="btn5" type="button" onclick="redirectToLink(5)"><span class="sr-only">ไปยังลิงก์ 5</span></button>
+    <button class="redirect-button" id="btn6" type="button" onclick="redirectToLink(6)"><span class="sr-only">ไปยังลิงก์ 6</span></button>
+    <button class="redirect-button" id="btn7" type="button" onclick="redirectToLink(7)"><span class="sr-only">ไปยังลิงก์ 7</span></button>
+    <button class="redirect-button" id="btn8" type="button" onclick="redirectToLink(8)"><span class="sr-only">ไปยังลิงก์ 8</span></button>
+    <button class="redirect-button" id="btn9" type="button" onclick="redirectToLink(9)"><span class="sr-only">ไปยังลิงก์ 9</span></button>
+    <button class="redirect-button" id="btn10" type="button" onclick="redirectToLink(10)"><span class="sr-only">ไปยังลิงก์ 10</span></button>
+    <button class="redirect-button" id="btn11" type="button" onclick="redirectToLink(11)"><span class="sr-only">ไปยังลิงก์ 11</span></button>
+    <button class="redirect-button" id="btn12" type="button" onclick="redirectToLink(12)"><span class="sr-only">ไปยังลิงก์ 12</span></button>
+    <button class="redirect-button" id="btn13" type="button" onclick="redirectToLink(13)"><span class="sr-only">ไปยังลิงก์ 13</span></button>
+    <button class="redirect-button" id="btn14" type="button" onclick="redirectToLink(14)"><span class="sr-only">ไปยังลิงก์ 14</span></button>
+    <button class="redirect-button" id="btn15" type="button" onclick="redirectToLink(15)"><span class="sr-only">ไปยังลิงก์ 15</span></button>
+    <button class="redirect-button" id="btn16" type="button" onclick="redirectToLink(16)"><span class="sr-only">ไปยังลิงก์ 16</span></button>
+    <button class="redirect-button" id="btn17" type="button" onclick="redirectToLink(17)"><span class="sr-only">ไปยังลิงก์ 17</span></button>
+    <button class="redirect-button" id="btn18" type="button" onclick="redirectToLink(18)"><span class="sr-only">ไปยังลิงก์ 18</span></button>
+    <button class="redirect-button" id="btn19" type="button" onclick="redirectToLink(19)"><span class="sr-only">ไปยังลิงก์ 19</span></button>
+    <button class="redirect-button" id="btn20" type="button" onclick="redirectToLink(20)"><span class="sr-only">ไปยังลิงก์ 20</span></button>
+  </div>
+
+  <div class="watermark">สร้างโดย SAK28</div>
+
+  <script>
+    function redirectToLink(number) {
+      const links = {
+      1: 'https://m.pgsoft-games.com/1778752/index.html?l=th&ot=ca7094186b309ee149c55c8822e7ecf2&btt=2&_refer=m.pg-redirect.net&or=static.pgsoft-games.com',
+        2: 'https://m.pgsoft-games.com/1623475/index.html?l=th&ot=ca7094186b309ee149c55c8822e7ecf2&btt=2&_refer=m.pg-redirect.net&or=static.pgsoft-games.com',
+        3: 'https://m.pgsoft-games.com/1635221/index.html?l=th&ot=ca7094186b309ee149c55c8822e7ecf2&btt=2&_refer=m.pg-redirect.net&or=static.pgsoft-games.com',
+        4: 'https://hippo168.com/lobby/all',
+        5: 'https://m.pgsoft-games.com/33/index.html?l=th&ot=ca7094186b309ee149c55c8822e7ecf2&btt=2&_refer=m.pg-redirect.net&or=static.pgsoft-games.com',
+        6: 'https://m.pgsoft-games.com/35/index.html?l=th&ot=ca7094186b309ee149c55c8822e7ecf2&btt=2&_refer=m.pg-redirect.net&or=static.pgsoft-games.com',
+        7: 'https://m.pgsoft-games.com/36/index.html?l=th&ot=ca7094186b309ee149c55c8822e7ecf2&btt=2&_refer=m.pg-redirect.net&or=static.pgsoft-games.com',
+        8: 'https://m.pgsoft-games.com/41/index.html?l=th&ot=ca7094186b309ee149c55c8822e7ecf2&btt=2&_refer=m.pg-redirect.net&or=static.pgsoft-games.com',
+        9: 'https://m.pgsoft-games.com/42/index.html?l=th&ot=ca7094186b309ee149c55c8822e7ecf2&btt=2&_refer=m.pg-redirect.net&or=static.pgsoft-games.com',
+        10: 'https://m.pgsoft-games.com/57/index.html?l=th&ot=ca7094186b309ee149c55c8822e7ecf2&btt=2&_refer=m.pg-redirect.net&or=static.pgsoft-games.com',
+        11: 'https://m.pgsoft-games.com/58/index.html?l=th&ot=ca7094186b309ee149c55c8822e7ecf2&btt=2&_refer=m.pg-redirect.net&or=static.pgsoft-games.com',
+        12: 'https://m.pgsoft-games.com/59/index.html?l=th&ot=ca7094186b309ee149c55c8822e7ecf2&btt=2&_refer=m.pg-redirect.net&or=static.pgsoft-games.com',
+        13: 'https://m.pgsoft-games.com/60/index.html?l=th&ot=ca7094186b309ee149c55c8822e7ecf2&btt=2&_refer=m.pg-redirect.net&or=static.pgsoft-games.com',
+        14: 'https://m.pgsoft-games.com/135/index.html?l=th&ot=ca7094186b309ee149c55c8822e7ecf2&btt=2&_refer=m.pg-redirect.net&or=static.pgsoft-games.com',
+        15: 'https://m.pgsoft-games.com/1402846/index.html?l=th&ot=ca7094186b309ee149c55c8822e7ecf2&btt=2&_refer=m.pg-redirect.net&or=static.pgsoft-games.com',
+        16: 'https://m.pgsoft-games.com/1451122/index.html?l=th&ot=ca7094186b309ee149c55c8822e7ecf2&btt=2&_refer=m.pg-redirect.net&or=static.pgsoft-games.com',
+        17: 'https://m.pgsoft-games.com/1543462/index.html?l=th&ot=ca7094186b309ee149c55c8822e7ecf2&btt=2&_refer=m.pg-redirect.net&or=static.pgsoft-games.com',
+        18: 'https://m.pgsoft-games.com/1568554/index.html?l=th&ot=ca7094186b309ee149c55c8822e7ecf2&btt=2&_refer=m.pg-redirect.net&or=static.pgsoft-games.com',
+        19: 'https://m.pgsoft-games.com/1312883/index.html?l=th&ot=ca7094186b309ee149c55c8822e7ecf2&btt=2&_refer=m.pg-redirect.net&or=static.pgsoft-games.com',
+        20: 'https://m.pgsoft-games.com/126/index.html?l=th&ot=ca7094186b309ee149c55c8822e7ecf2&btt=2&_refer=m.pg-redirect.net&or=static.pgsoft-games.com'
+      };
+
+      const url = links[number];
+      if (url) {
+        window.location.href = url;
+      } else {
+        alert('ยังไม่มีลิงก์สำหรับหมายเลขนี้');
+      }
+    }
+  </script>
+</body>
+</html>
