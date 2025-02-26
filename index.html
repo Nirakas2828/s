@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PG SLOT - EA168</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+    body {
+      font-family: 'Orbitron', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      background: radial-gradient(circle at center, #0f2027, #203a43, #2c5364);
+      color: #00e5ff;
+      text-shadow: 0 0 10px rgba(0, 229, 255, 0.8);
+      overflow-x: hidden;
+      padding-top: 80px;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      letter-spacing: 2px;
+      text-align: center;
+    }
+
+    .logo {
+      position: fixed;
+      top: 10px;
+      left: 10px;
+      width: 100px;
+      height: auto;
+      filter: drop-shadow(0 0 10px rgba(0, 229, 255, 0.8));
+      z-index: 1000;
+    }
+
+    .button-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+      gap: 15px;
+      width: 100%;
+      max-width: 600px;
+      padding: 15px;
+      backdrop-filter: blur(10px);
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(0, 229, 255, 0.3);
+      background: rgba(255, 255, 255, 0.05);
+    }
+
+    .redirect-button {
+      width: 100%;
+      padding-top: 100%;
+      position: relative;
+      border: none;
+      border-radius: 15px;
+      background-size: cover;
+      background-position: center;
+      cursor: pointer;
+      box-shadow: 0 0 10px rgba(0, 229, 255, 0.4);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .redirect-button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px rgba(0, 229, 255, 0.8);
+    }
+
+    .popup-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.7);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      z-index: 2000;
+    }
+
+    .popup-content {
+      width: 95%;
+      max-width: 500px;
+      height: 80vh;
+      background: #000;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(0, 229, 255, 0.8);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .popup-content iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    .popup-close {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: #ff4d4d;
+      color: #fff;
+      border: none;
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+      font-size: 1.2rem;
+      cursor: pointer;
+      box-shadow: 0 0 10px rgba(255, 77, 77, 0.8);
+    }
+
+    .watermark {
+      position: fixed;
+      bottom: 10px;
+      right: 10px;
+      font-size: 0.9rem;
+      color: rgba(0, 229, 255, 0.6);
+      text-shadow: 0 0 8px rgba(0, 229, 255, 0.9);
+    }
+  </style>
+</head>
+<body>
+  <img src="images/logo.png" alt="โลโก้ SAK28" class="logo">
+  <h1>EA168</h1>
+
+  <div class="button-container">
+    <button class="redirect-button" style="background-image: url('images/1.png');" onclick="openPopup(1)"></button>
+    <button class="redirect-button" style="background-image: url('images/2.png');" onclick="openPopup(2)"></button>
+    <button class="redirect-button" style="background-image: url('images/3.png');" onclick="openPopup(3)"></button>
+    <button class="redirect-button" style="background-image: url('images/4.png');" onclick="openPopup(4)"></button>
+    <button class="redirect-button" style="background-image: url('images/5.png');" onclick="openPopup(5)"></button>
+    <button class="redirect-button" style="background-image: url('images/6.png');" onclick="openPopup(6)"></button>
+    <button class="redirect-button" style="background-image: url('images/7.png');" onclick="openPopup(7)"></button>
+    <button class="redirect-button" style="background-image: url('images/8.png');" onclick="openPopup(8)"></button>
+    <button class="redirect-button" style="background-image: url('images/9.png');" onclick="openPopup(9)"></button>
+    <button class="redirect-button" style="background-image: url('images/10.png');" onclick="openPopup(10)"></button>
+    <button class="redirect-button" style="background-image: url('images/11.png');" onclick="openPopup(11)"></button>
+    <button class="redirect-button" style="background-image: url('images/12.png');" onclick="openPopup(12)"></button>
+    <button class="redirect-button" style="background-image: url('images/13.png');" onclick="openPopup(13)"></button>
+    <button class="redirect-button" style="background-image: url('images/14.png');" onclick="openPopup(14)"></button>
+    <button class="redirect-button" style="background-image: url('images/15.png');" onclick="openPopup(15)"></button>
+    <button class="redirect-button" style="background-image: url('images/16.png');" onclick="openPopup(16)"></button>
+    <button class="redirect-button" style="background-image: url('images/17.png');" onclick="openPopup(17)"></button>
+    <button class="redirect-button" style="background-image: url('images/18.png');" onclick="openPopup(18)"></button>
+    <button class="redirect-button" style="background-image: url('images/19.png');" onclick="openPopup(19)"></button>
+    <button class="redirect-button" style="background-image: url('images/20.png');" onclick="openPopup(20)"></button>
+  </div>
+
+  <div class="popup-overlay" id="popupOverlay">
+    <div class="popup-content">
+      <button class="popup-close" onclick="closePopup()">&times;</button>
+      <iframe id="popupIframe" src=""></iframe>
+    </div>
+  </div>
+
+  <div class="watermark">สร้างโดย SAK28</div>
+
+  <script>
+    const links = {
+      1: 'https://m.pgsoft-games.com/1778752/index.html?l=th&ot=ca7094186b309ee149c55c8822e7ecf2&btt=2&_refer=m.pg-redirect.net&or=static.pgsoft-games.com',
+      2: 'https://m.pgsoft-games.com/1623475/index.html?l=th&ot=ca7094186b309ee149c55c8822e7ecf2&btt=2&_refer=m.pg-redirect.net&or=static.pgsoft-games.com',
+      3: 'https://m.pgsoft-games.com/1635221/index.html?l=th&ot=ca7094186b309ee149c55c8822e7ecf2&btt=2&_refer=m.pg-redirect.net&or=static.pgsoft-games.com',
+      4: 'https://hippo168.com/lobby/all',
+      5: 'https://m.pgsoft-games.com/33/index.html?l=th&ot=ca7094186b309ee149c55c8822e7ecf2&btt=2&_refer=m.pg-redirect.net&or=static.pgsoft-games.com',
+      6: 'https://m.pgsoft-games.com/35/index.html?l=th&ot=ca7094186b309ee149c55c8822e7ecf2&btt=2&_refer=m.pg-redirect.net&or=static.pgsoft-games.com',
+      7: 'https://m.pgsoft-games.com/36/index.html?l=th&ot=ca7094186b309ee149c55c8822e7ecf2&btt=2&_refer=m.pg-redirect.net&or=static.pgsoft-games.com',
+      8: 'https://m.pgsoft-games.com/41/index.html?l=th&ot=ca7094186b309ee149c55c8822e7ecf2&btt=2&_refer=m.pg-redirect.net&or=static.pgsoft-games.com',
+      9: 'https://m.pgsoft-games.com/42/index.html?l=th&ot=ca7094186b309ee149c55c8822e7ecf2&btt=2&_refer=m.pg-redirect.net&or=static.pgsoft-games.com',
+      10: 'https://m.pgsoft-games.com/57/index.html?l=th&ot=ca7094186b309ee149c55c8822e7ecf2&btt=2&_refer=m.pg-redirect.net&or=static.pgsoft-games.com',
+      11: 'https://m.pgsoft-games.com/58/index.html?l=th&ot=ca7094186b309ee149c55c8822e7ecf2&btt=2&_refer=m.pg-redirect.net&or=static.pgsoft-games.com',
+      12: 'https://m.pgsoft-games.com/59/index.html?l=th&ot=ca7094186b309ee149c55c8822e7ecf2&btt=2&_refer=m.pg-redirect.net&or=static.pgsoft-games.com',
+      13: 'https://m.pgsoft-games.com/60/index.html?l=th&ot=ca7094186b309ee149c55c8822e7ecf2&btt=2&_refer=m.pg-redirect.net&or=static.pgsoft-games.com',
+      14: 'https://m.pgsoft-games.com/135/index.html?l=th&ot=ca7094186b309ee149c55c8822e7ecf2&btt=2&_refer=m.pg-redirect.net&or=static.pgsoft-games.com',
+      15: 'https://m.pgsoft-games.com/1402846/index.html?l=th&ot=ca7094186b309ee149c55c8822e7ecf2&btt=2&_refer=m.pg-redirect.net&or=static.pgsoft-games.com',
+      16: 'https://m.pgsoft-games.com/1451122/index.html?l=th&ot=ca7094186b309ee149c55c8822e7ecf2&btt=2&_refer=m.pg-redirect.net&or=static.pgsoft-games.com',
+      17: 'https://m.pgsoft-games.com/1543462/index.html?l=th&ot=ca7094186b309ee149c55c8822e7ecf2&btt=2&_refer=m.pg-redirect.net&or=static.pgsoft-games.com',
+      18: 'https://m.pgsoft-games.com/1568554/index.html?l=th&ot=ca7094186b309ee149c55c8822e7ecf2&btt=2&_refer=m.pg-redirect.net&or=static.pgsoft-games.com',
+      19: 'https://m.pgsoft-games.com/1312883/index.html?l=th&ot=ca7094186b309ee149c55c8822e7ecf2&btt=2&_refer=m.pg-redirect.net&or=static.pgsoft-games.com',
+      20: 'https://m.pgsoft-games.com/126/index.html?l=th&ot=ca7094186b309ee149c55c8822e7ecf2&btt=2&_refer=m.pg-redirect.net&or=static.pgsoft-games.com'
+    };
+
+    function openPopup(number) {
+      const overlay = document.getElementById('popupOverlay');
+      const iframe = document.getElementById('popupIframe');
+      iframe.src = links[number] || '';
+      overlay.style.display = 'flex';
+    }
+
+    function closePopup() {
+      const overlay = document.getElementById('popupOverlay');
+      const iframe = document.getElementById('popupIframe');
+      iframe.src = '';
+      overlay.style.display = 'none';
+    }
+  </script>
+</body>
+</html>
